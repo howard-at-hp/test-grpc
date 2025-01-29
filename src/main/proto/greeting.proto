@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option java_package = "org.example.testgrpc.contracts.proto";
+option java_package = "org.example.testgrpc.api.grpc";
 option java_outer_classname = "GreetingProto";
 
 service GreetingService {
-  rpc Greeting (GreetingApiQuery) returns (GreetingResponse);
+  rpc Greeting (GreetingApiQuery) returns (GreetingResponse) {};
 }
 
 // 멤버 생성 요청 객체

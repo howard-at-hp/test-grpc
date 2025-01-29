@@ -1,10 +1,9 @@
-package api.controller
+package org.example.testgrpc.api.controller
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.example.testgrpc.contracts.request.GreetingApiQuery
 import org.assertj.core.api.Assertions.assertThat
 import org.example.testgrpc.TestGrpcApplication
-import org.example.testgrpc.api.controller.GreetingController
 import org.example.testgrpc.contracts.response.Greeting
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest

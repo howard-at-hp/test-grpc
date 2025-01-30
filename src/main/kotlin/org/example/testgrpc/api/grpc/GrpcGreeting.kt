@@ -1,9 +1,12 @@
 package org.example.testgrpc.api.grpc
 
 import io.grpc.stub.StreamObserver
-import org.springframework.stereotype.Service
+import org.example.testgrpc.GreetingProto
+import org.example.testgrpc.GreetingServiceGrpc
+import org.springframework.grpc.server.service.GrpcService
 
-@Service
+
+@GrpcService
 class GrpcGreeting : GreetingServiceGrpc.GreetingServiceImplBase() {
 
     override fun greeting(
